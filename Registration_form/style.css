@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding:10px;
+    background:linear-gradient(135deg, #71b7e6, #9b59b6)
+}
+.container{
+    position: relative;
+    max-width: 660px;
+    width: 100%;
+    /* height: 100; */
+    background-color: #fff;
+    border-radius:15px;
+    padding: 20px;
+    box-shadow:10px 10px 10px 0px rgb(110, 5, 5);
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+}
+.container .title-blank::before{
+    content: ' ';
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    /* bottom: 0; */
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container form .container-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.container form .detail{
+    display: flex;
+    flex-direction: column;
+}
+.container form .detail .detail-value{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.container form .detail input{
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-color: linear-gradient(135deg, #71b7e6, #9b59b6);
+    border-bottom-width: 3px;
+}
+.container form .gender-title{
+    font-size: 25px;
+    font-weight: 500;
+}
+.container form .gender-radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.container form .gender-radio .gender-radio-values .male{
+    font-size: 18px;
+    font-weight: 500;
+}
+.container form .gender-radio .gender-radio-values{
+    margin: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.container form .gender-radio .gender-radio-values .one{
+    width: 18px;
+    height: 18px;
+    background: rgb(182, 152, 152);
+    border-radius: 50%;
+    border: 4px solid red;
+}
+/* .gender input[type="radio"]{
+    display: none;
+} */
+#dot-1:checked ~ .gender .gender-radio-values label .one,
+#dot-2:checked ~ .gender .gender-radio-values label .two,
+#dot-3:checked ~ .gender .gender-radio-values label .three{
+   border-color: #9b59b6;
+   background: black;
+}
+.container form .button input{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: linear-gradient(#71b7e6, #9b59b6);
+}

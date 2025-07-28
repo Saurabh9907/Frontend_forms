@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <span class="title-blank"></span>
+        <form action="#">
+            <div class="container-form">
+            <div class="detail">
+                <span class="detail-value">Full name</span>
+                <input type="text" placeholder="Enter your full name" required>
+            </div>
+            <div class="detail">
+                <span class="detail-value">User name</span>
+                <input type="text" placeholder="Enter your user name" required>
+            </div>
+            <div class="detail">
+                <span class="detail-value">Email</span>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="detail">
+                <span class="detail-value">Phone number</span>
+                <input type="number" placeholder="Enter your number" required>
+            </div>
+            <div class="detail">
+                <span class="detail-value">Password</span>
+                <input type="password" placeholder="Enter your Password" required>
+            </div>
+            <div class="detail">
+                <span class="detail-value">Conform Password</span>
+                <input type="password" placeholder="Conform Password" required>
+            </div>
+            </div>
+            <div class="gender">
+                <div class="gender-title">Gender</div>
+                <input type="radio" name="male" id="dot-1">
+                <input type="radio" name="male" id="dot-2">
+                <input type="radio" name="male" id="dot-3">
+                <div class="gender-radio">
+                    <label class="gender-radio-values" for="dot-1">
+                        <span class="one one"></span>
+                        <div class="male">Male</div>
+                    </label>
+                    <label class="gender-radio-values" for="dot-2">
+                        <span class="one two"></span>
+                        <div class="male">Female</div>
+                    </label>
+                    <label class="gender-radio-values" for="dot-3">
+                        <span class="one three"></span>
+                        <div class="male">Prefer not to say</div>
+                    </label>
+                </div>
+            </div>    
+            <div class="button">
+                <input type="submit" value="Submit"><br><br>
+                <input type="reset">
+            </div>
+            </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
