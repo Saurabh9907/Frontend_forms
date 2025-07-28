@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            /* width: 900px; */
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            max-width: 900px;
+            min-width: 600px;
+            width: 300px;
+            background: lime;
+            /* height: 100vh; */
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 2px;
+        }
+        .container .left-box{
+            width: 100px;
+            background: pink;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .container .right-box{
+            width: 200px;
+            background: peru;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .container .box1 {
+            height: 50px;
+            width: 50px;
+            background: rgba(199, 31, 31, 0.548);
+            border-radius: 5px;
+        }
+        .container .box2 {
+            height: 50%;
+            width: 50%;
+            background: yellow;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>saurabh</h2>
+        <div class="left-box">
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+        </div>
+        <div class="right-box">
+            <div class="box2"></div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>feedback-form</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'poppines', sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            background: #c8e8e9;
+            display: flex;
+            /* width:600px; */
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .container{
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            /* height: 100vh;  */
+            flex-direction: row;
+            background:#ffff ;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            padding: 50px 30px 50px 0px;
+            box-shadow: 10px 10px 10px 0px rgb(110, 5, 5);
+        }
+        .container .container-symble {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 400px;
+            align-items: center;
+            padding: 5px;
+            max-width: 900px;
+            width: 400px;
+            flex-wrap: wrap;
+        }
+        .container .container-symble .container-symble-detail{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap:5px;
+        }
+        .container .container-symble .container-symble-detail .phone-title,
+        .container .container-symble .container-symble-detail .email-title,
+        .container .container-symble .container-symble-detail .address-title{
+            font-size: 20px;
+            font-weight: 500;
+        } 
+        .container .container-symble .container-symble-detail .subtitle{
+            font-weight: 500;
+            color: rgb(188, 161, 161);
+            font-size: medium;
+        }
+        .fas {
+            font-size: 30px;
+            color: rgb(7, 7, 238);
+            /* background-color: red; */
+            margin-top: 10px;
+        }
+        .container .line::after{
+            content: '';
+            width: 6px;
+            height: 390px;
+            top: 12%;
+            background: rgb(188, 161, 161);
+            border-radius: 2px;
+            position: absolute;
+        }
+        .container .container-form {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .container .container-form .container-form-title{
+            font-size: 35px;
+            font-weight: bold;
+            color: rgb(7, 7, 238);
+        }
+        .container .container-form .container-form-message{
+            font-weight: 500;
+            font-size: medium;
+            color:rgb(188, 161, 161);
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .container .container-form form {
+            display: flex;
+            justify-content: space-between;
+            /* max-width: 800px;
+            width: 700px; */
+            flex-direction: column;
+            gap: 13px;
+            /* align-items: center; */
+        }
+        .container .container-form form input {
+            font-size: 18px;
+            font-weight: 500;
+            color: rgb(188, 161, 161);
+            height: 50px;
+            border-radius: 5px;
+            padding-left: 10px;
+            background: rgba(128, 128, 128, 0.307);
+            border: none;
+        }
+        .container .container-form form textarea {
+            font-size: 18px;
+            font-weight: 500;
+            color: rgb(188, 161, 161);
+            height: 100px;
+            border-radius: 5px;
+            padding-left: 10px;
+            background: rgba(128, 128, 128, 0.307);
+            border: none;
+            /* display: none; */
+        }
+        .container .container-form form input[type="submit"]{
+            width: 150px;
+            margin-top: 15px;
+            font-size:25px;
+            background: rgb(7, 7, 238);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-symble">
+            <div class="container-symble-detail">
+                <i id="int" class="fas fa-map-marker-alt"></i>
+                <div class="address-title">Address</div>
+                <div class="subtitle">Surkhet, NP12</div>
+                <div class="subtitle">Birendranagar 06</div>
+            </div>
+            <div class="container-symble-detail">
+                <i class="fas fa-phone-alt"></i>
+                <div class="phone-title">Phone</div>
+                <div class="subtitle">+006898775154</div>
+                <div class="subtitle">+006898775154</div>
+            </div>
+            <div class="container-symble-detail">
+                <i class="fas fa-envelope"></i>
+                <div class="email-title">Email</div>
+                <div class="subtitle">devin@gmail.com</div>
+                <div class="subtitle">prajapari@gmail.com</div>
+            </div>
+        </div>
+        <span class="line"></span>
+        <div class="container-form">
+            <div class="container-form-title">Send us a message</div>
+            <p class="container-form-message">If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasue to help you.</p>
+            <form action="#">
+                <input type="text" placeholder="Enter your name" required>
+                <input type="email" placeholder="Enter your email" required>
+                <textarea rows="5" cols="50" name="text" id="text" placeholder="Enter your message"></textarea>
+                <input type="submit" value="Send now">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
