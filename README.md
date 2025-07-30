@@ -15,4 +15,4 @@ This is a simple landing page UI built using HTML, CSS, and JavaScript.
 ## 📌 How to use
 1. Clone this repository:
    ```bash
-   git clone https://github.com/username/frontend-design.git
+   git clone https://github.com/Saurabh9907/Frontend_forms.git
